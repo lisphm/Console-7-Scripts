@@ -1,2 +1,1 @@
-print(console)
-print("epicness")
+console.log("epicness")
