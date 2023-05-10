@@ -65,6 +65,6 @@ local ui = uiTable[1]
 ui.Parent = threadUI
 ui.Command.Text = console.text
 
-console.screen.ConsoleText:GetPropertyChangedSignal("Text"):Connect(function()
+threadConnections.TextChanged = console.screen.ConsoleText:GetPropertyChangedSignal("Text"):Connect(function()
     ui.Command.Text = console.text
 end)
