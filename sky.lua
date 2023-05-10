@@ -66,5 +66,6 @@ ui.Parent = threadUI
 ui.Command.Text = console.text
 
 threadConnections.TextChanged = console.screen.ConsoleText:GetPropertyChangedSignal("Text"):Connect(function()
+    if not ui:FindFirstChild("Command") then return end
     ui.Command.Text = console.text
 end)
