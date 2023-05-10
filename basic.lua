@@ -70,3 +70,4 @@ threadConnections.TextChanged = console.screen.ConsoleText:GetPropertyChangedSig
 end)
 
 console.log('Basic UI Loaded. Version "Forest"')
+ui.Command.Text = console.text
