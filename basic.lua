@@ -1,1 +1,2 @@
+print(console)
 print("epicness")
