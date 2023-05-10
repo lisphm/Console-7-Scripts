@@ -68,3 +68,5 @@ ui.Command.Text = console.text
 threadConnections.TextChanged = console.screen.ConsoleText:GetPropertyChangedSignal("Text"):Connect(function()
     ui.Command.Text = console.text
 end)
+
+while wait() do print('ez') end
