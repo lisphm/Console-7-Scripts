@@ -5,7 +5,7 @@ local function uiDecode(json)
 
 	local function set(object, parent)
 		if not object.ClassName then return end
-		local n = create{object.ClassName}
+		local n = Instance.new(object.ClassName)
 		for prop, value in next, object do
 			if prop ~= "Children" and prop ~= "ClassName" then
 				if type(value) == "table" then
